@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+h2 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#taskInput {
+    margin-top: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+}
+
+#addTaskButton {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#addTaskButton:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    input[type="submit"],
+    #addTaskButton {
+        width: 100%;
+    }
+}

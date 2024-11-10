@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>Order Cakes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Udaya's Bakery<br>
+            Order Your Cake</h1>
+    </header>
+    <main>
+        <form id="cakeOrderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cakeType">Cake Type:</label>
+            <select id="cakeType" name="cakeType" required>
+                <option value="">Select a type</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="redVelvet">Red Velvet</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <input type="submit" value="Order Cake">
+        </form>
+
+        <div id="confirmation"></div>
+
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button id="addTaskButton">Add Task</button>
+        <ul id="taskList"></ul>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
